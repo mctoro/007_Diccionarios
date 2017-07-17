@@ -69,7 +69,7 @@ public class Ejercicio07 {
         
     }
     
-    public static void opcionElegida(int opcion) {
+    private static void opcionElegida(int opcion) {
         
         switch (opcion) {
             case 1:
@@ -103,7 +103,7 @@ public class Ejercicio07 {
         
     }
     
-    public static boolean addPrecio(double precio) {
+    private static boolean addPrecio(double precio) {
         boolean resultado = false;
         
         resultado = precios.add(precio);
@@ -111,7 +111,7 @@ public class Ejercicio07 {
         return resultado;
     }
     
-    public static double calcularMaximo() {
+    private static double calcularMaximo() {
         double maximo = 0;
         
         for (Double precio : precios) {
@@ -122,7 +122,7 @@ public class Ejercicio07 {
         
     }
     
-    public static double calcularMinimo() {
+    private static double calcularMinimo() {
         double minimo = Double.MAX_VALUE;
         for (Double precio : precios) {
             minimo = Math.min(minimo, precio);
@@ -131,7 +131,7 @@ public class Ejercicio07 {
         
     }
 
-    public static double calcularMedio() {
+    private static double calcularMedio() {
         double precioMedio = 0;
         for (Double precio : precios) {
             precioMedio += precio;
