@@ -16,7 +16,8 @@ public class Diccionarios {
         System.out.println("habia "+ dentroDelCajon);
         System.out.println("hay " + diccionario.get("cajon"));
         
-        
+        diccionario.remove("cajon");
+        System.out.println(diccionario.size());
     }
     
     
